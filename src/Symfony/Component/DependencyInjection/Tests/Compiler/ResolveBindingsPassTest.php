@@ -111,6 +111,7 @@ class ResolveBindingsPassTest extends TestCase
 
         $this->assertEquals(array(array('setDefaultLocale', array('fr'))), $definition->getMethodCalls());
     }
+<<<<<<< HEAD
 
     public function testOverriddenBindings()
     {
@@ -153,4 +154,6 @@ class ResolveBindingsPassTest extends TestCase
         );
         $this->assertEquals($expected, $definition->getMethodCalls());
     }
+=======
+>>>>>>> upstream/3.4
 }

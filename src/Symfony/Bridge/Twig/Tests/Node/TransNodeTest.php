@@ -34,7 +34,11 @@ class TransNodeTest extends TestCase
 
         $this->assertEquals(
             sprintf(
+<<<<<<< HEAD
                 'echo $this->env->getExtension(\'Symfony\Bridge\Twig\Extension\TranslationExtension\')->trans("trans %%var%%", array_merge(array("%%var%%" => %s), %s), "messages");',
+=======
+                'echo $this->env->getExtension(\'Symfony\Bridge\Twig\Extension\TranslationExtension\')->getTranslator()->trans("trans %%var%%", array_merge(["%%var%%" => %s], %s), "messages");',
+>>>>>>> upstream/3.4
                 $this->getVariableGetterWithoutStrictCheck('var'),
                 $this->getVariableGetterWithStrictCheck('foo')
              ),
